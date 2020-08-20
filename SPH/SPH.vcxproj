@@ -146,6 +146,7 @@
   <ItemGroup>
     <ClInclude Include="particle.h" />
     <ClInclude Include="simulator.h" />
+    <ClInclude Include="SPH.h" />
     <ClInclude Include="vec3d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

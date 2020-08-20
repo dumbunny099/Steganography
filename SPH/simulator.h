@@ -1,16 +1,22 @@
 #pragma once
 #include <vector>
+#include "vec3d.h"
 #include "particle.h"
 
 class simulator {
 public:
-	float number;
-	float size;
-	float gravityConstant;
-	vec3d force;
-	vector<particle*> particles;
-	simulator(int,int,float,float);
+	float radius;
+	float mass;
+	int boundary;
+	float g;
+	float h;
+	vec3d gravity;
+	vector<particle> particles;
+	vector<particle>*** neighbor;
+	vector<particle> neighbors;
+
+	simulator(float, float,float, int,int);
 	~simulator();
-	void simulation();
-	void draw();
+	void simulate();
+	void findNeighbor(particle);
 };

@@ -1,17 +1,13 @@
 #pragma once
 #include "vec3d.h"
-
 class particle {
 public:
-	float mass;
-	float radius;
 	vec3d position;
 	vec3d velocity;
-	particle(int,float,float);
+	float density;
+	particle(int);
 	~particle();
-	
-	void collision(particle*,int size);
-	void movement(vec3d);
+	void collision_boundary(float,int);
 	void draw();
+	void movement(vec3d, float);
 };
-void collision_boundary(particle*,int size);
