@@ -2,10 +2,11 @@
 #include <gl/glut.h>
 #include <gl/gl.h>
 #include <gl/glu.h>
+#include "simulator.h"
 using namespace std;
 
 int length = 100;
-
+simulator Simulator = simulator(2.0, 2.0, 3.0, 100, 100);
 void Initialize(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
@@ -57,17 +58,20 @@ void Render() {
 	glColor3f(0.0, 0.0, 1.0);
 	glPointSize(10.0);
 	glBegin(GL_POINTS);
+	Simulator.draw();
 	glEnd();
 	glutSwapBuffers();
 }
 
 void update(int value) {
+	Simulator.simulate();
 	glutPostRedisplay();
-	glutTimerFunc(25, update, 0);
+	glutTimerFunc(100, update, 0);
 }
 
 int main(int argc, char** argv) {
 	Initialize(argc,argv);
+	
 	glutDisplayFunc(Render);
 	glutTimerFunc(2000, update, 0);
 	glutMainLoop();

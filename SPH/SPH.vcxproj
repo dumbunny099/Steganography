@@ -141,6 +141,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="particle.cpp" />
     <ClCompile Include="simulator.cpp" />
+    <ClCompile Include="SPH.cpp" />
     <ClCompile Include="vec3d.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -2,7 +2,6 @@
 #include <gl/glut.h>
 #include <gl/gl.h>
 #include <gl/glu.h>
-#include <iostream>
 #include <random>
 using namespace std;
 
@@ -18,30 +17,33 @@ particle::particle(int boundary) {
 particle::~particle() {};
 
 void particle::collision_boundary(float radius, int boundary) {
-	if (position.x < 0) {
-		position.x += radius - position.x;
-		velocity.x *= -1;
+	float damp = 0.9;
+	
+	if (position.x < 0 && velocity.x<0) {
+		position.x = radius;
+		velocity.x *= (-1 * damp);
 	}
-	else if (position.x > boundary) {
-		position.x -= radius - boundary + position.x;
-		velocity.x * -1;
+	else if (position.x > boundary&& velocity.x > 0) {
+		position.x = boundary - radius;
+		velocity.x *= (-1 * damp);
 	}
-	if (position.y < 0) {
-		position.y += radius - position.y;
-		velocity.y *= -1;
+	if (position.y < 0 && velocity.y < 0) {
+		position.y = radius;
+		velocity.y *= (-1 * damp);
 	}
-	else if (position.y > boundary) {
-		position.y -= radius - boundary + position.y;
-		velocity.y * -1;
+	else if (position.y > boundary && velocity.y > 0) {
+		position.y = boundary - radius;
+		velocity.y *= (-1 * damp);
 	}
-	if (position.z < 0) {
-		position.z += radius - position.z;
-		velocity.z *= -1;
+	if (position.z < 0 && velocity.z < 0) {
+		position.z = radius;
+		velocity.z *= (-1 * damp);
 	}
-	else if (position.z > boundary) {
-		position.z -= radius - boundary + position.z;
-		velocity.z * -1;
+	else if (position.z > boundary&& velocity.z > 0) {
+		position.z = boundary - radius;
+		velocity.z *= (-1 * damp);
 	}
+	
 }
 
 void particle::draw() {

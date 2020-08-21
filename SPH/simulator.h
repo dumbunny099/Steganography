@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
-#include "vec3d.h"
 #include "particle.h"
+#include "SPH.h"
 
 class simulator {
 public:
@@ -11,12 +11,14 @@ public:
 	float g;
 	float h;
 	vec3d gravity;
-	vector<particle> particles;
-	vector<particle>*** neighbor;
-	vector<particle> neighbors;
+	vector<particle> particles = vector<particle>();
+	vector<int>*** neighbor;
 
 	simulator(float, float,float, int,int);
 	~simulator();
 	void simulate();
-	void findNeighbor(particle);
+	void collision(int,int );
+	void draw();
+	void setNeighbor();
+	vector<int> findNeighbor(int);
 };

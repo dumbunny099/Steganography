@@ -1,11 +1,50 @@
-﻿  particle.cpp
-C:\Users\KUCG\source\repos\SPH\particle.cpp(13,33): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KUCG\source\repos\SPH\particle.cpp(13,23): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\KUCG\source\repos\SPH\particle.cpp(60,32): error C2668: 'collision_boundary': 오버로드된 함수에 대한 호출이 모호합니다.
-C:\Users\KUCG\source\repos\SPH\particle.cpp(22,6): message : 'void collision_boundary(particle &,int)'일 수 있습니다.
-C:\Users\KUCG\source\repos\SPH\particle.h(17,6): message : 또는       'void collision_boundary(particle,int)'
-C:\Users\KUCG\source\repos\SPH\particle.cpp(60,32): message : 인수 목록 '(particle, int)'을(를) 일치시키는 동안
-C:\Users\KUCG\source\repos\SPH\particle.cpp(61,32): error C2668: 'collision_boundary': 오버로드된 함수에 대한 호출이 모호합니다.
-C:\Users\KUCG\source\repos\SPH\particle.cpp(22,6): message : 'void collision_boundary(particle &,int)'일 수 있습니다.
-C:\Users\KUCG\source\repos\SPH\particle.h(17,6): message : 또는       'void collision_boundary(particle,int)'
-C:\Users\KUCG\source\repos\SPH\particle.cpp(61,32): message : 인수 목록 '(particle, int)'을(를) 일치시키는 동안
+﻿  SPH.cpp
+C:\Users\KUCG\source\repos\SPH\SPH.cpp(8,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\SPH.cpp(9,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\SPH.cpp(19,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\SPH.cpp(30,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+C:\Users\KUCG\source\repos\SPH\main.cpp(26,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(28,16): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(29,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(30,21): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(30,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(31,16): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(32,21): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(32,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(34,19): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(35,16): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(36,24): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(36,16): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(37,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(38,24): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(38,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(39,21): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(39,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(40,29): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(40,21): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(40,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(41,19): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(42,24): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(42,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(43,19): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(44,24): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(44,16): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(45,24): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(45,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(46,29): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(46,21): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(46,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(47,24): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(47,16): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(48,29): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(48,21): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\main.cpp(48,13): warning C4244: '인수': 'int'에서 'GLfloat'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  simulator.cpp
+C:\Users\KUCG\source\repos\SPH\simulator.cpp(7,10): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\KUCG\source\repos\SPH\simulator.cpp(9,28): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\KUCG\source\repos\SPH\simulator.cpp(13,16): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\simulator.cpp(36,16): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KUCG\source\repos\SPH\simulator.cpp(59,16): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  SPH.vcxproj -> C:\Users\KUCG\source\repos\SPH\x64\Debug\SPH.exe
