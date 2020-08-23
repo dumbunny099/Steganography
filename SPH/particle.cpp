@@ -9,7 +9,7 @@ particle::particle(int boundary) {
 	random_device rd;
 	mt19937 gen(rd());
 	uniform_real_distribution<> range(0, boundary);
-	position = vec3d(range(gen), range(gen), 0);
+	position = vec3d(range(gen), range(gen)/2, 0);
 	velocity = vec3d(0, 0, 0);
 	density = 0;
 }
@@ -17,7 +17,7 @@ particle::particle(int boundary) {
 particle::~particle() {};
 
 void particle::collision_boundary(float radius, int boundary) {
-	float damp = 0.9;
+	float damp = 0.5;
 	
 	if (position.x < 0 && velocity.x<0) {
 		position.x = radius;
@@ -47,6 +47,7 @@ void particle::collision_boundary(float radius, int boundary) {
 }
 
 void particle::draw() {
+	glColor3f(position.x / (position.x + position.y), position.y / (position.x + position.y), 1.0);
 	glVertex3f(position.x, position.y, position.z);
 }
 

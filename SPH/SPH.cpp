@@ -11,6 +11,28 @@ float poly6(vec3d r, int h) {
 	}
 }
 
+vec3d gradientPoly6(vec3d r, int h) {
+	if (r.mag() >= h || r.mag() == 0) {
+		return vec3d(0, 0, 0);
+	}
+	else {
+		float constant = 945 /(32 * PI * pow(h, 9));
+		vec3d kernel = r *-1* pow(pow(h,2) - pow(r.mag(),2), 2);
+		return kernel * constant;
+	}
+}
+
+float laplacianPoly6(vec3d r, int h) {
+	if (r.mag() >= h) {
+		return 0;
+	}
+	else {
+		float constant = 315 / (64 * PI * pow(h, 9));
+		float kernel = (pow(pow(h, 2) - pow(r.mag(), 2), 3));
+		return constant * kernel;
+	}
+}
+
 vec3d spiky(vec3d r, int h) {
 	if (r.mag() >= h || r.mag() == 0) {
 		return vec3d(0,0,0);
@@ -22,7 +44,7 @@ vec3d spiky(vec3d r, int h) {
 	}
 }
 
-float viscosity(vec3d r, int h) {
+float viscosityKernel(vec3d r, int h) {
 	if (r.mag() >= h || r.mag() == 0) {
 		return 0;
 	}

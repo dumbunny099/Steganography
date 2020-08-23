@@ -6,7 +6,7 @@
 using namespace std;
 
 int length = 100;
-simulator Simulator = simulator(2.0, 2.0, 3.0, 100, 100);
+simulator Simulator = simulator(2.0, 2.0, 3.0, 100, 1200);
 void Initialize(int argc, char** argv) {
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
@@ -66,7 +66,7 @@ void Render() {
 void update(int value) {
 	Simulator.simulate();
 	glutPostRedisplay();
-	glutTimerFunc(100, update, 0);
+	glutTimerFunc(50, update, 0);
 }
 
 int main(int argc, char** argv) {

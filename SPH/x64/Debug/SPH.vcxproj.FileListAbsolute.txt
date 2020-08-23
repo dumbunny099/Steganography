@@ -1,0 +1,2 @@
+C:\Users\hotsh\Desktop\projects\Steganography\SPH\x64\Debug\SPH.exe
+C:\Users\hotsh\Desktop\projects\Steganography\SPH\x64\Debug\SPH.pdb
